@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #e0e0e0; /* Fonte clara para contraste */
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #121212; /* Fundo escuro */
+  }
+  
+  .wrapper {
+    width: 420px;
+    background: #1e1e1e; /* Fundo da caixa escuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 40px;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-align: center;
+  }
+  
+ /* Estilo do título "Login" */
+.wrapper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff; /* Branco para destaque */
+    font-family: 'Quicksand', sans-serif; /* Aplicando a fonte Quicksand */
+  }
+  
+  
+  /* Caixa de entrada */
+  .input-box {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px; /* Ajuste do padding para espaço do ícone */
+    background: #333;
+    border: none;
+    border-radius: 25px; /* Borda arredondada */
+    color: #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  /* Ícones dentro das caixas de entrada */
+  .input-box i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.2rem;
+    pointer-events: none; /* Ícone não interfere com clique no input */
+  }
+  
+  /* Caixa de "remember me" e "forgot password" */
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .remember-forgot a {
+    color: #00bfff; /* Cor do link */
+    text-decoration: none;
+  }
+  
+  /* Botão de login */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #00bfff;
+    border: none;
+    border-radius: 25px; /* Borda arredondada */
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0099cc;
+  }
+  
+  /* Link de registro */
+  .register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .register-link a {
+    color: #00bfff;
+    text-decoration: none;
+  }
+  
+  /* Estilo global para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #e0e0e0; /* Cor clara para texto */
+}
+
+/* Corpo da página com fundo GIF Lofi e filtro de desfoque */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/Eu2114.gif') no-repeat center center/cover; /* Substitua com o caminho do seu gif Lofi */
+    background-attachment: fixed; /* Fundo fixo ao rolar */
+    backdrop-filter: blur(5px); /* Desfoque para o efeito Lofi */
+    overflow: hidden; /* Remover barras de rolagem */
+    animation: backgroundAnimation 7200s infinite; /* 7200 segundos = 2 horas */
+}
+
+/* Definir a animação para o fundo do GIF */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Estilo da wrapper (caixa de login) com fundo transparente */
+.wrapper {
+    width: 420px;
+    background: rgba(30, 30, 30, 0.8); /* Fundo semi-transparente */
+    color: #e0e0e0; /* Cor do texto */
+    padding: 40px;
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-align: center;
+    animation: float 5s ease-in-out infinite; /* Animação de flutuação */
+}
+
+/* Animação suave para a caixa de login */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Estilo do título "Login" com fonte suave Lofi */
+.wrapper h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive; /* Fonte Lofi */
+}
+
+/* Caixa de entrada */
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px; /* Ajuste do padding para o ícone */
+    background: #333;
+    border: none;
+    border-radius: 25px; /* Borda arredondada */
+    color: #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Ícones dentro das caixas de entrada */
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+/* Caixa de "remember me" e "forgot password" */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.remember-forgot a {
+    color: #00bfff; /* Cor do link */
+    text-decoration: none;
+}
+
+/* Botão de login */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #00bfff;
+    border: none;
+    border-radius: 25px; /* Borda arredondada */
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0099cc;
+}
+
+/* Link de registro */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+/* Estilo do botão de controle da música */
+.btn-music-control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #00bfff;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-music-control:hover {
+    background: #0099cc;
+}
+
+/* Animação de flutuação da wrapper */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

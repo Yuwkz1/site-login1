@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Link para fontes Lofi -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Player de música de fundo -->
+    <audio id="background-music" autoplay loop>
+        <source src="music/Doctor mc's Tik Tak (Tic Tac).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <!-- Caixa de login -->
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-box">
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register here</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Botão para pausar/reproduzir música -->
+    <button id="music-toggle" class="btn-music-control">Pause Music</button>
+
+    <!-- JavaScript para controle da música -->
+    <script>
+        const music = document.getElementById('background-music');
+        const musicToggleBtn = document.getElementById('music-toggle');
+
+        musicToggleBtn.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                musicToggleBtn.textContent = 'Pause Music';
+            } else {
+                music.pause();
+                musicToggleBtn.textContent = 'Play Music';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
